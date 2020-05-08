@@ -2,6 +2,7 @@ import React from "react";
 import "./style.css";
 import PlayerBoard from "../PlayerBoard/PlayerBoard";
 import ControlArea from "../ControlArea/ControlArea";
+import { createState } from "../../code/state";
 
 class BaseLayout extends React.Component {
   state = createState(this);
