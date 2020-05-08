@@ -1,6 +1,6 @@
 import React from "react";
 
-const ControlArea: React.FC = () => {
+const ControlArea: React.FC = ({ state }: any) => {
   return (
     <React.Fragment>
       <div style={{ float: "left", width: "130px" }}>Your score:</div>

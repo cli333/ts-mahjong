@@ -1,7 +1,7 @@
 import React, { ReactElement } from "react";
 import "./style.css";
 
-const PlayerBoard: React.FC = () => {
+const PlayerBoard: React.FC = ({ state }: any) => {
   // tile defaults
   const tileWidth: number = 72;
   const tileHeight: number = 88;
@@ -50,8 +50,8 @@ const PlayerBoard: React.FC = () => {
             <img
               style={style}
               className={className}
-              onClick={() => StaticRange.tileClick(l, r, c)}
-              src={`/tile${tileVal}.jpg`}
+              onClick={() => state.tileClick(l, r, c)}
+              src={`/images/tile${tileVal}.png`}
             />
           );
         }
